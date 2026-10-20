@@ -1,0 +1,35 @@
+-- Reglages Radarr exportes : nommage, media, delai et 30 definitions de tailles.
+-- Aucune modification des profils, langues ou scores. Ne pas executer dans profilarr.db.
+INSERT INTO radarr_naming (name, rename, movie_format, movie_folder_format, replace_illegal_characters, colon_replacement_format) VALUES ('Weapky - Radarr Naming', 0, '{Movie Title} ({Release Year}) {Quality Full}', '{Movie Title} ({Release Year})', 1, 'smart');
+INSERT INTO radarr_media_settings (name, propers_repacks, enable_media_info) VALUES ('Weapky - Radarr Media', 'preferAndUpgrade', 1);
+INSERT INTO delay_profiles (name, preferred_protocol, usenet_delay, torrent_delay, bypass_if_highest_quality, bypass_if_above_custom_format_score, minimum_custom_format_score) VALUES ('Weapky - Radarr Delay 600', 'prefer_torrent', 600, 600, 0, 0, NULL);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'Unknown', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'WORKPRINT', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'CAM', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'TELESYNC', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'TELECINE', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'REGIONAL', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'DVDSCR', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'SDTV', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'DVD', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'DVD-R', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'WEBDL-480p', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'WEBRip-480p', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'Bluray-480p', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'Bluray-576p', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'HDTV-720p', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'WEBDL-720p', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'WEBRip-720p', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'Bluray-720p', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'HDTV-1080p', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'WEBDL-1080p', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'WEBRip-1080p', 0, 100, 95);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'Bluray-1080p', 0, 0, 0);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'Remux-1080p', 0, 0, 0);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'HDTV-2160p', 0, 0, 0);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'WEBDL-2160p', 0, 0, 0);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'WEBRip-2160p', 0, 0, 0);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'Bluray-2160p', 0, 0, 0);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'Remux-2160p', 0, 0, 0);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'BR-DISK', 0, 0, 0);
+INSERT INTO radarr_quality_definitions (name, quality_name, min_size, max_size, preferred_size) VALUES ('Weapky - Radarr Sizes', 'Raw-HD', 0, 0, 0);
